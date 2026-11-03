@@ -6,7 +6,7 @@ hide:
 
 <div class="hero" markdown>
 
-# 你好，我是 SoberMeng 👋
+# 你好，我是 SoberMeng
 
 <p class="hero-subtitle">网络工程 · Linux · 云计算 · 自动化运维</p>
 

@@ -10,20 +10,20 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: zh
-  logo: https://github.com/sobermeng166.png
-  favicon: https://github.com/sobermeng166.png
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
   custom_dir: overrides
 
   palette:
     - scheme: default
-      primary: indigo
-      accent: cyan
+      primary: black
+      accent: grey
       toggle:
         icon: material/brightness-7
         name: 切换到暗色模式
     - scheme: slate
-      primary: indigo
-      accent: cyan
+      primary: black
+      accent: grey
       toggle:
         icon: material/brightness-4
         name: 切换到亮色模式
