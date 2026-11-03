@@ -14,3 +14,7 @@ fi
 
 git commit -m "$message"
 git push deploy main
+
+if git remote get-url origin >/dev/null 2>&1; then
+  git push origin main
+fi
