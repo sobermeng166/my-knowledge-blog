@@ -4,7 +4,7 @@ services:
     container_name: mkdocs-blog
     restart: unless-stopped
     ports:
-      - "0.0.0.0:28081:8000"
+      - "0.0.0.0:28080:8000"
     volumes:
       - ./:/docs
     environment:

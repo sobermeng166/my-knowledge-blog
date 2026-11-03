@@ -1,7 +1,7 @@
 site_name: SoberMeng 的知识库
 site_description: 网络、Linux、云计算与自动化运维笔记
 site_author: SoberMeng
-site_url: http://10.24.32.143:28081/
+site_url: http://10.24.32.143:28080/
 
 repo_url: https://github.com/sobermeng166/my-knowledge-base
 repo_name: sobermeng166/my-knowledge-base
