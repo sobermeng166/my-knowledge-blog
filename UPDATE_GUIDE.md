@@ -13,6 +13,7 @@
 | 正式访问地址 | http://10.24.32.143:28080 |
 | 本地源码目录 | `/home/chengmeng/nas/knowledge-base-mkdocs` |
 | 本地编辑目录 | `/home/chengmeng/nas/knowledge-base-mkdocs/docs` |
+| 本地部署目录 | `/home/chengmeng/nas/knowledge-base-deploy` |
 | 远程部署目录 | `/home/chengmeng/docker/mkdocs-blog` |
 | 远程裸仓库 | `/home/chengmeng/git/mkdocs-blog.git` |
 | 容器名称 | `mkdocs-blog` |
@@ -45,10 +46,12 @@ http://10.24.32.143:28080 更新
 ```text
 /home/chengmeng/nas/knowledge-base-mkdocs/
 ├── mkdocs.yml              # 站点配置、主题、导航
-├── docker-compose.yml      # 容器与端口配置
-├── deploy.sh               # 一键发布脚本
+├── requirements.txt        # GitHub Pages 构建依赖
 ├── README.md               # 项目简要说明
 ├── UPDATE_GUIDE.md         # 本文档
+├── .github/
+│   └── workflows/
+│       └── pages.yml       # GitHub Pages 自动构建
 ├── overrides/
 │   └── main.html           # 自定义 HTML 模板
 └── docs/
@@ -69,7 +72,17 @@ http://10.24.32.143:28080 更新
         └── extra.css       # 自定义样式
 ```
 
-**重要**：只编辑 `docs/` 下的 Markdown 和资源文件。  
+**重要**：本仓库只保存文档和构建配置，不保存服务器部署文件。  
+服务器部署文件单独放在：
+
+```text
+/home/chengmeng/nas/knowledge-base-deploy/
+├── deploy.sh
+├── docker-compose.yml
+└── README.md
+```
+
+只编辑 `docs/` 下的 Markdown 和资源文件。  
 `mkdocs.yml` 控制导航和主题，`docs/stylesheets/extra.css` 控制界面样式。
 
 ---
@@ -89,7 +102,7 @@ http://10.24.32.143:28080 更新
 ### 3.2 一键发布
 
 ```bash
-cd /home/chengmeng/nas/knowledge-base-mkdocs
+cd /home/chengmeng/nas/knowledge-base-deploy
 ./deploy.sh "更新 OSPF 笔记"
 ```
 
@@ -99,6 +112,7 @@ cd /home/chengmeng/nas/knowledge-base-mkdocs
 2. 检查是否有改动
 3. `git commit -m "更新 OSPF 笔记"`
 4. `git push deploy main`
+5. `git push origin main`
 
 ### 3.3 手动发布
 
@@ -108,6 +122,7 @@ cd /home/chengmeng/nas/knowledge-base-mkdocs
 git add .
 git commit -m "更新 OSPF 笔记"
 git push deploy main
+git push origin main
 ```
 
 ### 3.4 验证
@@ -332,14 +347,14 @@ overrides/main.html
 ```bash
 ssh chengmeng@10.24.32.143
 cd /home/chengmeng/docker/mkdocs-blog
-docker compose ps
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml ps
 ```
 
 ### 7.2 查看实时日志
 
 ```bash
 cd /home/chengmeng/docker/mkdocs-blog
-docker compose logs -f
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml logs -f
 ```
 
 构建完成后日志会出现：
@@ -353,15 +368,15 @@ Serving on http://0.0.0.0:8000/
 
 ```bash
 cd /home/chengmeng/docker/mkdocs-blog
-docker compose restart
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml restart
 ```
 
 ### 7.4 完全重建容器
 
 ```bash
 cd /home/chengmeng/docker/mkdocs-blog
-docker compose down
-docker compose up -d
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml down
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml up -d
 ```
 
 ### 7.5 查看端口占用
@@ -425,19 +440,19 @@ git push --force deploy main
 
 ```bash
 cd /home/chengmeng/docker/mkdocs-blog
-docker compose logs --tail=100
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml logs --tail=100
 ```
 
 3. 确认容器在运行：
 
 ```bash
-docker compose ps
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml ps
 ```
 
 4. 强制重建：
 
 ```bash
-docker compose restart
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml restart
 ```
 
 ### 9.2 页面 503
@@ -446,8 +461,8 @@ docker compose restart
 如果持续 503，检查：
 
 ```bash
-docker compose ps
-docker compose logs --tail=100
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml ps
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml logs --tail=100
 ```
 
 ### 9.3 页面 404
@@ -545,7 +560,7 @@ git push origin main
 - [ ] 新文章已加入 `mkdocs.yml` 的 `nav`（如需显示在侧边栏）
 - [ ] 图片路径正确，没有 `D:\...` 本机路径
 - [ ] 代码块语言标注正确
-- [ ] 执行了 `./deploy.sh "更新说明"`
+- [ ] 执行了 `/home/chengmeng/nas/knowledge-base-deploy/deploy.sh "更新说明"`
 - [ ] 等待 15–20 秒
 - [ ] 打开 http://10.24.32.143:28080 确认页面
 - [ ] 重要更新可用 `git log` 确认提交记录
@@ -555,11 +570,8 @@ git push origin main
 ## 12. 快速命令备忘
 
 ```bash
-# 进入项目
+# 进入文档仓库
 cd /home/chengmeng/nas/knowledge-base-mkdocs
-
-# 一键发布
-./deploy.sh "更新说明"
 
 # 查看状态
 git status
@@ -570,11 +582,14 @@ git log --oneline -10
 # 查看远程
 git remote -v
 
+# 一键发布
+cd /home/chengmeng/nas/knowledge-base-deploy
+./deploy.sh "更新说明"
+
 # 查看线上容器
 ssh chengmeng@10.24.32.143
-cd /home/chengmeng/docker/mkdocs-blog
-docker compose ps
-docker compose logs -f
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml ps
+docker compose -f /home/chengmeng/docker/mkdocs-blog-compose.yml logs -f
 ```
 
 ---
