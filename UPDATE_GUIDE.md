@@ -579,4 +579,67 @@ docker compose logs -f
 
 ---
 
+## 13. GitHub Pages 部署（可选）
+
+仓库已包含 `.github/workflows/pages.yml`，可以把同一套 Markdown 免费发布到 GitHub Pages。
+
+### 13.1 新建 GitHub 仓库
+
+建议新建一个公开仓库，例如：
+
+```text
+sobermeng166/my-knowledge-blog
+```
+
+不要直接覆盖旧的 GitBook 仓库 `my-knowledge-base`，除非你确认要替换它。
+
+### 13.2 添加远程并推送
+
+```bash
+cd /home/chengmeng/nas/knowledge-base-mkdocs
+
+git remote add origin git@github.com:sobermeng166/my-knowledge-blog.git
+git push -u origin main
+```
+
+如果本机没有配置 GitHub SSH key，也可以使用 HTTPS：
+
+```bash
+git remote add origin https://github.com/sobermeng166/my-knowledge-blog.git
+git push -u origin main
+```
+
+### 13.3 开启 GitHub Pages
+
+进入 GitHub 仓库：
+
+```text
+Settings → Pages → Source → GitHub Actions
+```
+
+之后每次 `git push origin main`，Actions 会自动执行：
+
+1. 安装 `mkdocs-material`
+2. 执行 `mkdocs build --clean`
+3. 上传 `site/`
+4. 发布到 GitHub Pages
+
+访问地址：
+
+```text
+https://sobermeng166.github.io/my-knowledge-blog/
+```
+
+工作流会根据仓库名自动设置 `SITE_URL`，不需要改 `mkdocs.yml`。
+
+### 13.4 注意事项
+
+- 公开仓库会公开 `docs/` 下所有文件，包括 PDF/EPUB 书籍，请确认版权和隐私。
+- 私有仓库使用 GitHub Pages 通常需要 GitHub Pro。
+- GitHub Pages 适合静态展示；国内访问速度可能不稳定。
+- 服务器部署和 GitHub Pages 可以同时保留，互不影响。
+- 如果使用自定义域名，在仓库 `Settings → Pages → Custom domain` 配置，并把 `SITE_URL` 改成自己的域名。
+
+---
+
 **维护建议**：每次更新保持一个主题一个 commit，提交信息写清楚模块和内容，后续回滚会更容易。
