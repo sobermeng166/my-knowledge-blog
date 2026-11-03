@@ -133,7 +133,4 @@ nav:
           - Shell 生产环境实用示例: chapter1/shell/shell示例.md
       - 虚拟化与云底座:
           - VMware: chapter1/虚拟化/VMWARE.md
-  - 扩展阅读:
-      - 经典编程书籍导读: chapter1/free-programming-books-zh_CN/README.md
-      - 程序员必读的非编程书单: chapter1/free-programming-books-zh_CN/what-non-programming-books-should-programmers-read.md
   - 关于: about.md

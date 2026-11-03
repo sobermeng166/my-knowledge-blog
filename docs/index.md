@@ -77,14 +77,6 @@ hide:
 
     [:octicons-arrow-right-24: 查看网络笔记](chapter1/network/NAT技术.md)
 
--   :material-book-open-variant: **扩展阅读**
-
-    ---
-
-    经典编程书籍、非编程书单与 Linux 内核学习资料。
-
-    [:octicons-arrow-right-24: 浏览书单](chapter1/free-programming-books-zh_CN/README.md)
-
 </div>
 
 ## 关于本站
