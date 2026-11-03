@@ -10,7 +10,7 @@ hide:
 
 <p class="hero-subtitle">网络工程 · Linux · 云计算 · 自动化运维</p>
 
-<p class="hero-desc">这里记录我在工作中沉淀的技术笔记、实验记录与学习路径。</p>
+<p class="hero-desc">这里记录我在工作中沉淀的技术笔记、实验记录与学习路径，持续更新。</p>
 
 [开始阅读](chapter1/network/华为设备命令总结.md){ .md-button .md-button--primary }
 [GitHub](https://github.com/sobermeng166){ .md-button }
