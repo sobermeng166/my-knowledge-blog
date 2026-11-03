@@ -407,6 +407,7 @@ git log --oneline -10
 ```bash
 git revert <commit-id>
 git push deploy main
+git push origin main
 ```
 
 `git revert` 会生成一条反向提交，不会删除历史，推荐使用。
@@ -418,6 +419,7 @@ git checkout <commit-id> -- docs/chapter1/network/某文件.md
 git add .
 git commit -m "恢复误删文件"
 git push deploy main
+git push origin main
 ```
 
 ### 8.4 强制回到某个版本
