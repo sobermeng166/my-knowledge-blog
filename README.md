@@ -2,6 +2,8 @@
 
 这是基于 MkDocs Material 的个人知识博客，内容由 GitBook 迁移而来。
 
+完整的编辑、发布、导航、回滚和故障排查说明见 [UPDATE_GUIDE.md](UPDATE_GUIDE.md)。
+
 ## 本地编辑
 
 用 Typora 打开 `docs/` 目录，正常编辑 Markdown：
