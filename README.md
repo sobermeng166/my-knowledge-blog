@@ -17,6 +17,16 @@ docs/
 
 ## 发布
 
+### 一键发布
+
+```bash
+cd /home/chengmeng/nas/knowledge-base-mkdocs
+
+./deploy.sh "更新 OSPF 笔记"
+```
+
+### 手动发布
+
 ```bash
 cd /home/chengmeng/nas/knowledge-base-mkdocs
 
