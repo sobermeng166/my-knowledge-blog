@@ -1,0 +1,143 @@
+site_name: SoberMeng 的知识库
+site_description: 网络、Linux、云计算与自动化运维笔记
+site_author: SoberMeng
+site_url: http://10.24.32.143:28081/
+
+repo_url: https://github.com/sobermeng166/my-knowledge-base
+repo_name: sobermeng166/my-knowledge-base
+edit_uri: ""
+
+theme:
+  name: material
+  language: zh
+  logo: https://github.com/sobermeng166.png
+  favicon: https://github.com/sobermeng166.png
+  custom_dir: overrides
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sobermeng166
+      name: GitHub
+  generator: false
+
+copyright: Copyright &copy; 2026 SoberMeng
+
+nav:
+  - 首页: index.md
+  - 技术笔记:
+      - 容器与云计算:
+          - Docker 容器底座: chapter1/docker/docker.md
+          - OpenStack 核心组件: chapter1/openstack/openstack.md
+      - HCIP 路由交换:
+          - OSPF 核心调优: chapter1/HCIP-R-S-master/OSPF.md
+          - BGP 协议详解: chapter1/HCIP-R-S-master/BGP.md
+          - BGP 反射与联盟: chapter1/HCIP-R-S-master/BGP反射与联盟.md
+          - ISIS 协议栈: chapter1/HCIP-R-S-master/ISIS.md
+          - IPv6 协议过渡: chapter1/HCIP-R-S-master/IPv6.md
+          - MPLS 基础架构: chapter1/HCIP-R-S-master/MPLS.md
+          - MPLS-VPN 组网技术: chapter1/HCIP-R-S-master/MPLS-VPN.md
+          - STP、RSTP 与 MSTP: chapter1/HCIP-R-S-master/STP、RSTP与MSTP.md
+          - VRRP 冗余网关: chapter1/HCIP-R-S-master/VRRP.md
+          - DHCP 报文与配置: chapter1/HCIP-R-S-master/DHCP.md
+          - 组播基础 IGMP: chapter1/HCIP-R-S-master/组播基础IGMP.md
+          - IP 组播 PIM 协议: chapter1/HCIP-R-S-master/IP组播-PIM协议.md
+          - 高级路由策略: chapter1/HCIP-R-S-master/路由策略.md
+          - QoS 服务质量: chapter1/HCIP-R-S-master/Qos.md
+      - HCIP 实验:
+          - OSPF 综合实验一: chapter1/HCIP-R-S-master/实验/OSPF综合实验一/OSPF综合实验.md
+          - OSPF 综合实验二: chapter1/HCIP-R-S-master/实验/OSPF综合实验二/OSPF综合实验.md
+          - OSPF 综合实验三: chapter1/HCIP-R-S-master/实验/OSPF综合实验三/OSPF综合实验.md
+          - OSPF 练习: chapter1/HCIP-R-S-master/实验/OSPF练习/OSPF练习.md
+          - BGP 练习: chapter1/HCIP-R-S-master/实验/BGP练习/BGP练习.md
+          - BGP 聚合实验: chapter1/HCIP-R-S-master/实验/BGP聚合实验/BGP聚合实验.md
+          - IS-IS 练习: chapter1/HCIP-R-S-master/实验/IS-IS练习/IS-IS练习.md
+          - IS-IS 综合实验: chapter1/HCIP-R-S-master/实验/IS-IS综合实验/ISIS综合实验.md
+          - MPLS VPN 综合实验: chapter1/HCIP-R-S-master/实验/MPLS VPN综合实验/MPLS-VPN实验.md
+          - MPLS VPN 综合实验练习: chapter1/HCIP-R-S-master/实验/MPLS VPN综合实验练习/MPLS VPN综合实验练习.md
+          - 组播综合实验: chapter1/HCIP-R-S-master/实验/组播—综合实验/组播—综合实验.md
+          - 组播 PIM-DM 实验: chapter1/HCIP-R-S-master/实验/组播—PIM-DM实验/组播—PIM-DM实验.md
+          - 路由策略实验: chapter1/HCIP-R-S-master/实验/路由策略实验/路由策略实验.md
+          - 路由过滤与引入实验: "chapter1/HCIP-R-S-master/实验/路由过滤&路由引入实验/路由过滤&路由引入实验.md"
+          - 路由过滤与引入实验练习: "chapter1/HCIP-R-S-master/实验/路由过滤&路由引入实验练习/路由过滤&路由引入实验练习.md"
+          - HCIP 综合实验: chapter1/HCIP-R-S-master/实验/HCIP综合实验/HCIP综合实验.md
+      - Linux 与传统网络:
+          - Linux 内核体系导读: chapter1/linux_kernel_wiki/README.md
+          - NAT 地址转换技术: chapter1/network/NAT技术.md
+          - 华为数通设备命令总结: chapter1/network/华为设备命令总结.md
+      - 自动化脚本与工具:
+          - Vim 核心基础操作: chapter1/vim/vim.md
+          - Vim 高效进阶用法: chapter1/vim/vim用法.md
+          - Git 版本控制常用命令: chapter1/git/常用命令.md
+      - Python 脚本开发:
+          - Python 基础教程: chapter1/python/python教程.md
+          - Python 进阶笔记: chapter1/python/python笔记.md
+          - Python 自动化运维脚本: chapter1/python/python脚本.md
+      - Shell 文本处理:
+          - Shell 入门基础: chapter1/shell/shell入门基础.md
+          - Shell 核心学习笔记: chapter1/shell/shell学习笔记.md
+          - Shell 经典十三问: chapter1/shell/shell十三问.md
+          - awk 文本流式处理: chapter1/shell/awk.md
+          - Linux 变量深度详解: chapter1/shell/变量详解.md
+          - Shell 生产环境实用示例: chapter1/shell/shell示例.md
+      - 虚拟化与云底座:
+          - VMware: chapter1/虚拟化/VMWARE.md
+  - 扩展阅读:
+      - 经典编程书籍导读: chapter1/free-programming-books-zh_CN/README.md
+      - 程序员必读的非编程书单: chapter1/free-programming-books-zh_CN/what-non-programming-books-should-programmers-read.md
+  - 关于: about.md

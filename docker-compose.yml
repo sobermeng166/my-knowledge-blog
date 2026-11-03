@@ -1,0 +1,11 @@
+services:
+  mkdocs-blog:
+    image: squidfunk/mkdocs-material:latest
+    container_name: mkdocs-blog
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:28081:8000"
+    volumes:
+      - ./:/docs
+    environment:
+      - TZ=Asia/Shanghai
