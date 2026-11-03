@@ -12,6 +12,5 @@
 ## 联系我
 
 - GitHub：<https://github.com/sobermeng166>
-- 项目仓库：<https://github.com/sobermeng166/my-knowledge-base>
 
-> 笔记会持续更新，欢迎交流指正。
+> 笔记主用于自用，欢迎交流指正。
