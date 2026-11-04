@@ -9,7 +9,7 @@
 
 如下拓扑：
 
-![实验拓扑](%E7%BB%84%E6%92%AD%E2%80%94PIM-DM%E5%AE%9E%E9%AA%8C.assets/%E5%AE%9E%E9%AA%8C%E6%8B%93%E6%89%91.png)
+![实验拓扑](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/blog/162eef6ea7/%E5%AE%9E%E9%AA%8C%E6%8B%93%E6%89%91.png)
 
 ## 基础配置
 

@@ -4,7 +4,7 @@
 
 如下拓扑图：
 
-![OSPF综合实验](OSPF%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C.assets/OSPF%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C.png)
+![OSPF综合实验](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/blog/019b149635/OSPF%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C.png)
 
 **实验需求**：
 

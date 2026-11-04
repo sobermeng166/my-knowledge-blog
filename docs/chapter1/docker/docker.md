@@ -44,7 +44,7 @@ Docker 是一个开源的容器引擎，可以轻松的为任何应用创建一�
 
 那不妨考虑一下 Docker，你可以将每个服务打包为一个docker镜像并使用docker-compose 来`模拟生产环境`(checkout docker networks)。最开始实践的时候可能会比较费时费力，但长远地来看，最终将产生巨大的生产力。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-ba7b411935fa38e99f77676330a2bf68_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-ba7b411935fa38e99f77676330a2bf68_720w.webp)
 
 1. 自动测试(Automated testing)
 
@@ -58,7 +58,7 @@ Docker 是一个开源的容器引擎，可以轻松的为任何应用创建一�
 
 都说 Docker 天生适合持续集成/持续部署，在部署中使用Docker，持续部署将变得非常简单，并会在进入新的镜像后重新开始。关于这个部分的自动化工作，现在已经有许多方案以供选择，Kubernetes就是一个耳熟能详的名字。Kubernetes是容器集群管理系统，是一个开源的平台，可以实现容器集群的自动化部署、自动扩缩容、维护等功能。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-15ffaf4f57db7307c65398abc2cf4b9c_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-15ffaf4f57db7307c65398abc2cf4b9c_720w.webp)
 
 1. 多租户环境(Multi-tenancy)
 
@@ -268,7 +268,7 @@ docker管理数据的方式有两种：
 
 lBind mount 会覆盖容器中的文件，而 volume mount 则不会。即如果容器中已有文件，则会将文件同步到主机的目录上。此方式与 Linux 系统的 mount 方式很相似，即是会覆盖容器内已存在的目录或文件，但并不会改变[容器内](https://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s%3F__biz%3DMzI0MDQ4MTM5NQ%3D%3D%26mid%3D2247500702%26idx%3D2%26sn%3D0fb77cd1830fe7f637bb6e4f3da2b13b%26chksm%3De918a682de6f2f9417f49d9d64253e12d38822df6f28458b502c2be8eddb5177d5b76153cdac%26scene%3D21%23wechat_redirect)原有的文件，当 umount 后容器内原有的文件就会还原。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-73bff83e429b39b9d022383b12c852dc_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-73bff83e429b39b9d022383b12c852dc_720w.webp)
 
 ### **数据卷(Volumes)**
 
@@ -386,7 +386,7 @@ $ docker run -d \
     nginx:latest
 ```
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-0ea4367cded0d7b41709a0021dcf73c6_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-0ea4367cded0d7b41709a0021dcf73c6_720w.webp)
 
 ### **挂载主机目录 - bind mounts**
 
@@ -429,7 +429,7 @@ $ docker run -d -it --name devtest \
 
 ### **特殊属性**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-3cb42dc72b8f38018c97ce521a2965a8_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-3cb42dc72b8f38018c97ce521a2965a8_720w.webp)
 
 ```bash
 $ docker run -d -it --name devtest \
@@ -480,7 +480,7 @@ $ docker info | grep 'Logging Driver'
 Logging Driver: json-file
 ```
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-e0562f4c2b65b193c82f22721063200e_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-e0562f4c2b65b193c82f22721063200e_720w.webp)
 
 我们可以在 docker run 命令中通过 --log-driver 参数来设置具体的 Docker 日志驱动，也可以通过 --log-opt 参数来指定对应日志驱动的相关选项。
 
@@ -855,7 +855,7 @@ b5b65bee5aed   tomcat-web   "/bin/sh -c '/usr/..."   5 seconds ago  Up 4 seconds
 
 浏览器输入[http://server-ip:8080](https://link.zhihu.com/?target=http%3A//server-ip%3A8080), 结果如下：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-8bacccfdbfc31a667e414325d1d05869_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-8bacccfdbfc31a667e414325d1d05869_720w.webp)
 
 ## **Docker三剑客**
 
@@ -1045,7 +1045,7 @@ Docker是一项非常流行的容器技术，现在在各行各业有着广泛�
 
 Portainer是一款Docker可视化管理工具，允许我们在网页中方便的查看和管理Docker容器。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-886a16e8f6f701569d280c5c7d05aa16_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-886a16e8f6f701569d280c5c7d05aa16_720w.webp)
 
 要使用Portainer很简单，运行下面两条命令即可。这些命令会创建一个Portainer专用的卷，然后在8000和9000端口创建容器并运行。
 
@@ -1055,17 +1055,17 @@ $ docker volume create portainer_data$ docker run --name portainer -d -p 8000:80
 
 然后在浏览器打开对应地址，就会发现成功运行了。第一次运行的时候需要设置账号，然后选择要管理的Docker主机。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-12c0bf55b8dd5066844943f5fb7f0a49_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-12c0bf55b8dd5066844943f5fb7f0a49_720w.webp)
 
 设置账号
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-a954642ebd5aebd5eff722a65caf2ab3_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-a954642ebd5aebd5eff722a65caf2ab3_720w.webp)
 
 选择要管理的主机
 
 之后就可以看到本机上运行的Docker容器了，点击它们还可以进行容器的管理。左边的条目可以管理卷、创建容器、查看主机信息等等。基本上该有的功能都有了，这也是我推荐的一个工具。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-b8124e45f4101eb73b50b4de06c46739_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-b8124e45f4101eb73b50b4de06c46739_720w.webp)
 
 
 
@@ -1073,7 +1073,7 @@ $ docker volume create portainer_data$ docker run --name portainer -d -p 8000:80
 
 LazyDocker是基于终端的一个可视化查询工具，支持键盘操作和鼠标点击。相比Portainer来说可能不那么专业，不过对于开发者来说可能反而更加好用了。因为一般开发者都是使用命令行来运行Docker，偶尔需要图形化查看的时候，就可以使用LazyDocker这个工具。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-db1d0da2a51302ae5a7171d4655a79d7_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-db1d0da2a51302ae5a7171d4655a79d7_720w.webp)
 
 官网演示图
 
@@ -1091,7 +1091,7 @@ alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~
 
 然后就可以在终端中查看Docker容器、镜像和卷的信息了。LazyDocker支持键盘操作和鼠标点击，直接用鼠标点击就可以查看对应信息了。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-41003c8af828537a4cac0fa2b846ef19_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-41003c8af828537a4cac0fa2b846ef19_720w.webp)
 
 需要注意如果你的终端LazyDocker的图形显示的是乱的，不用担心，只不过是显示字体的问题。重新设置一下终端字体就可以解决了。
 
@@ -1304,9 +1304,9 @@ c8d51c583c49        kafka-docker_kafka            1.63%               1.256GiB /
 
 ### **一、发布流程设计**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-7b5f03d74bb92a4dad7810878f80f55b_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-7b5f03d74bb92a4dad7810878f80f55b_720w.webp)
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-69ac65f8d11a7aeffc27a104a2e14767_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-69ac65f8d11a7aeffc27a104a2e14767_720w.webp)
 
 工作流程：
 
@@ -1315,7 +1315,7 @@ c8d51c583c49        kafka-docker_kafka            1.63%               1.256GiB /
 - Jenkins拉取代码、代码编码、打包镜像、推送到镜像仓库；
 - Jenkins在Docker主机创建容器并发布。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-06fde07c75600ae47bdf90be138fcfd4_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-06fde07c75600ae47bdf90be138fcfd4_720w.webp)
 
 ### **三、 部署过程**
 
@@ -1331,7 +1331,7 @@ git clone git@192.168.0.31:/home/git/solo.git
 
 部署传送门：J[enkins+Maven+Svn实现代码自动打包与发布](https://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s%3F__biz%3DMzI0MDQ4MTM5NQ%3D%3D%26mid%3D2247484630%26idx%3D1%26sn%3Da5b2584764a9485f570cc70278a5efd2%26chksm%3De91b61cade6ce8dcd680a5d513d99521ca3201e2673a059575a95ff41e31b0d94570e53ba12f%26scene%3D21%23wechat_redirect)
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-5cfe5a8d5528ed0d841c4c911c7b0e3f_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-5cfe5a8d5528ed0d841c4c911c7b0e3f_720w.webp)
 
 3，部署私有镜像仓库
 
@@ -1413,7 +1413,7 @@ docker build -t 192.168.56.11:5000/tomcat-85:latest -f dockerfile .
 #最后这个点。代表当前路径，在制作镜像时，会记录上下文内容
 ```
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-56402684e832983420b69a36ebe3c073_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-56402684e832983420b69a36ebe3c073_720w.webp)
 
 4，上传到docker 镜像仓库
 
@@ -1428,7 +1428,7 @@ root@node02 scripts]# docker push 192.168.56.11:5000/tomcat-85:latest
 [root@3addff07c464 ROOT]# echo "123" >index.jsp
 ```
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-149f1cd17ef8811dd135f67619eb6808_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-149f1cd17ef8811dd135f67619eb6808_720w.webp)
 
 ### **五、Jenkins 配置**
 
@@ -1436,7 +1436,7 @@ root@node02 scripts]# docker push 192.168.56.11:5000/tomcat-85:latest
 
 指定JDK、Maven路径，Git保持默认：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-162383cb9e48d801ff3de6a15986f12d_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-162383cb9e48d801ff3de6a15986f12d_720w.webp)
 
 2.jenkins安装必要插件
 
@@ -1449,7 +1449,7 @@ root@node02 scripts]# docker push 192.168.56.11:5000/tomcat-85:latest
 - 》SSH：用于SSH远程Docker主机执行Shell命令
 - 》Git Parameter：动态获取Git仓库Branch、Tag
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-3fc89fb6827cf307ddcf491e664753a2_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-3fc89fb6827cf307ddcf491e664753a2_720w.webp)
 
 3，配置SSH插件
 
@@ -1457,21 +1457,21 @@ root@node02 scripts]# docker push 192.168.56.11:5000/tomcat-85:latest
 
 主页面 -> 凭据 -> 系统 -> 右击全局凭据 -> 添加凭据：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-5ddae019280bfddf2ce2f4f9516f7ec1_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-5ddae019280bfddf2ce2f4f9516f7ec1_720w.webp)
 
 输入连接Docker主机的用户名和密码：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-31f503be17a4f2e0e8d4854e71fee231_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-31f503be17a4f2e0e8d4854e71fee231_720w.webp)
 
 第二步：添加SSH远程主机
 
 主页面 -> 系统管理 -> 系统设置 -> SSH remote hosts：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-0aafe3c6fddadbb2207f6f6d3b71c56a_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-0aafe3c6fddadbb2207f6f6d3b71c56a_720w.webp)
 
 问题：当以普通用户身份去使用docker images时，出现以下错误：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-18e106ab3321917c04171368c699552c_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-18e106ab3321917c04171368c699552c_720w.webp)
 
 ### **六、将从github上下载的JAVA项目，上传到自己的gitlab仓库**
 
@@ -1493,27 +1493,27 @@ root@node02 scripts]# docker push 192.168.56.11:5000/tomcat-85:latest
 
 登陆gitlab查看solo项目：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-9aed1fe9a10bbbae9d6695922d0cb039_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-9aed1fe9a10bbbae9d6695922d0cb039_720w.webp)
 
 ### **七、Jenkins创建项目并发布测试**
 
 1.主页面 -> 新建任务 -> 输入任务名称，构建一个Maven项目：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-d97526542caedfa8e5a2a60d21831b3b_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-d97526542caedfa8e5a2a60d21831b3b_720w.webp)
 
 注意：如果没有显示“构建一个Maven项目”选项，需要在管理插件里安装“Maven Integration plugin”插件。
 
 配置Git参数化构建：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-756763e66070756760f94521d9bbf651_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-756763e66070756760f94521d9bbf651_720w.webp)
 
 2.动态获取Git仓库tag，与用户交互选择Tag发布：【也可以设置分支】
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-f47dde2c46c753c83f89335e8460ca78_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-f47dde2c46c753c83f89335e8460ca78_720w.webp)
 
 3.指定项目Git仓库地址：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-07ee20849dc8034f44104153144e3778_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-07ee20849dc8034f44104153144e3778_720w.webp)
 
 修改*/master为$Tag，Tag是上面动态获取的变量名，表示根据用户选择打代码版本。
 
@@ -1521,13 +1521,13 @@ root@node02 scripts]# docker push 192.168.56.11:5000/tomcat-85:latest
 
 clean package -Dmaven.test.skip=ture
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-35ab9b0a12c81cced94c68dc56eefa84_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-35ab9b0a12c81cced94c68dc56eefa84_720w.webp)
 
 利用pom.xml文件构建项目。
 
 在Jenkins本机镜像构建与推送到镜像仓库，并SSH远程连接到Docker主机使用推送的镜像创建容器：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-9623faf82038900c57cadceeae4ab426_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-9623faf82038900c57cadceeae4ab426_720w.webp)
 
 上图中 命令内容如下：
 
@@ -1547,7 +1547,7 @@ docker push $REPOSITORY
 
 
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-0ad5ff19720460e17d78df1b1f9838da_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-0ad5ff19720460e17d78df1b1f9838da_720w.webp)
 
 上图中Command 内容如下：
 
@@ -1566,23 +1566,23 @@ blog-solo项目已配置完成，开始构建：
 
 选择tag，开始构建：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-23e040779da9c2e1090ad0c0c96e1732_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-23e040779da9c2e1090ad0c0c96e1732_720w.webp)
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-23e040779da9c2e1090ad0c0c96e1732_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-23e040779da9c2e1090ad0c0c96e1732_720w.webp)
 
 点击左下角构建历史里，右击第一个查看控制台输出：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-03c086b11b120c1912636036db983288_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-03c086b11b120c1912636036db983288_720w.webp)
 
 构建详细内容
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-ae4a0e7282d7665636ff66308bca1031_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-ae4a0e7282d7665636ff66308bca1031_720w.webp)
 
 构建成功
 
 访问：192.168.56.12:8080 查看部署结果
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-6940455f912698d2f7b0aa13c798b09a_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-6940455f912698d2f7b0aa13c798b09a_720w.webp)
 
 调整项目访问地址
 
@@ -1601,7 +1601,7 @@ serverPort=8080
 
 调整后，重启tomcat，再次验证，OK，结果如下：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-40b0c0fd339e4217562bdb64167b69e4_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-40b0c0fd339e4217562bdb64167b69e4_720w.webp)
 
 至此，自动化CI环境搭建完成，你可以模拟提交代码并打tag测试自动化发布流程。
 
@@ -1614,7 +1614,7 @@ serverPort=8080
 srw-rw---- 1 root docker 0 9月 4 21:55 /var/run/docker.sock
 ```
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-a6d2dc894f1d1e2b390671fe8fe34795_720w.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-a6d2dc894f1d1e2b390671fe8fe34795_720w.png)
 
 解决方法：【免sudo 使用docker images 】
 
@@ -1637,7 +1637,7 @@ srw-rw---- 1 root docker 0 9月 4 21:55 /var/run/docker.sock
 
 这里主要是为了记录在使用 [Docker](https://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s%3F__biz%3DMzI0MDQ4MTM5NQ%3D%3D%26mid%3D2247504011%26idx%3D1%26sn%3D2d6a08bb65c4930e9748d3ea6af5c0f5%26chksm%3De918b597de6f3c814ea2f20a8b19a417af69d66ddd56c6801e9527fce0098df019f932e1c7c9%26scene%3D21%23wechat_redirect) 的时候遇到的问题及其处理解决方法。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-075ec9972d2e4fcbe4bd4ad8475f72c4_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-075ec9972d2e4fcbe4bd4ad8475f72c4_720w.webp)
 
 ### **1.Docker 迁移存储目录**
 
@@ -1694,7 +1694,7 @@ $ sudo cp -arv /data/docker /data2/docker
 
 下图中，就是因为启动的容器使用的是普通用户运行进程的，且在运行当中需要使用 /tmp 目录，结果提示没有权限。在我们导入容器镜像的时候，其实是会将容器启动时需要的各个目录的权限和属性都赋予了。如果我们直接是 cp 命令单纯复制文件内容的话，就会出现属性不一致的情况，同时还会有一定的安全问题。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/v2-75275e8b37b0bda0be2e3708f349efbf_720w.webp)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/v2-75275e8b37b0bda0be2e3708f349efbf_720w.webp)
 
 ### **2.[Docker](https://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s%3F__biz%3DMzI0MDQ4MTM5NQ%3D%3D%26mid%3D2247500917%26idx%3D2%26sn%3D8f93bd64875f72a94f222994fbe4c295%26chksm%3De918a169de6f287f8a3fb4fddf1bff02629753a21c28d7358f94879f9dc3c67ba12019680d42%26scene%3D21%23wechat_redirect) 设备空间不足**
 

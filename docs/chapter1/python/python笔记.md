@@ -656,7 +656,7 @@ Python 语言中，字符串是用两个双引号""或者单引号''括起来的
 `input（）`函数将用户输入的内容当做一个字符串类型，这是获得用户输入的常用方式，可以将提示用户输入的内容当作参数，这段内容将被输出。`print（）`函数可以直接打印字符串，这是输出字符串的常用方式
 
 字符串是字符的序列，可以按照单个字符或字符片段进行索引，字符串包括两种序号体系：正向递增序号和反向递减序号。
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413130540751-1870760423.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413130540751-1870760423.png)
 
 如上图中字符串`Hello world`长度为`11`（注意，空格也是一个字符)，正向递增以最左侧字符`H`序号为`0`，向右侧依次递增，最右侧字符`d`序号为`11-1=10`；反向递减序号以最右侧字符`d`序号为`-1`，向左依次递减，最左侧字符`H`序号为`-11`。这两种索引字符的方法可以同时使用。
 
@@ -5234,9 +5234,9 @@ https://www.baidu.com/s?wd=python&rsv_spt=1#page2
 
 例如，我们想要访问博客页面上的“字符串查找与替换”的内容，点击目录链接即可。注意看地址栏发生了什么变化：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413132316927-1551598417.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413132316927-1551598417.png)
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413132334379-1683741311.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413132334379-1683741311.png)
 
 是不是多了#字符串查找与替换，现在你应该能理解#的部分是干什么用的了吧
 
@@ -5462,7 +5462,7 @@ HTTP版本是指HTTP协议的不同发展阶段，它反映了HTTP协议的功�
 
 当我们在百度翻译的翻译框中填写“spider”时，发现浏览器给服务器发送了许多请求，我们在其中一个叫“v2transapi?from=en&to=zh”的请求“负载”的“表单数据”中，发现了“query”字段，它的值刚好是我们输入的spider，因此，我们猜测“v2transapi?from=en&to=zh”可能就是百度翻译的api
 
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413131256720-1557516755.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413131256720-1557516755.png)
 
 #### 2.伪装
 
@@ -5591,11 +5591,11 @@ ASCII（American Standard Code for Information Interchange，美国信息交换�
 
 **ASCII编码**：将ASCII字符集转换为计算机可以接受的数字系统的数的规则。使用7位（bits）表示一个字符，共128字符；但是7位编码的字符集只能支持128个字符，为了表示更多的欧洲常用字符对ASCII进行了扩展，ASCII扩展字符集使用8位（bits）表示一个字符，共256字符。ASCII字符集映射到数字编码规则如下图所示：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413132411596-138104790.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413132411596-138104790.png)
 
  图1 ASCII编码表
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413132411654-1542800725.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413132411654-1542800725.png)
 
  图2 扩展ASCII编码表
 
@@ -5657,7 +5657,7 @@ Unicode 标准中包含了许多表格，列出了很多字符及其对应的码
 2、对于 n 字节的符号 (n>1)，第 一个字节的前 n 位都设为 1，第 n+1位设为 0，后面字节的前两位一律设为 10（注意这里说的是二进制10）。**剩下的没有提及的二进制位，全部为这个符号的 Unicode码**
 可以看看下图，字母 x 表示可用编码的位 ：
 
-![UTF-8编码规则表](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413132411817-359004640.png)
+![UTF-8编码规则表](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413132411817-359004640.png)
 
 对编码细节感兴趣的同学请移步下面的文章，相信看完后你会对编码有一个更深入的理解：
 
@@ -5749,7 +5749,7 @@ print(hex(ord('蜘'))) # hex()返回整数的十六进制表示形式。
 
 #### 1.找到豆瓣电影排行榜的api
 
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413131351436-1145521255.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413131351436-1145521255.png)
 
 方法和之前百度翻译的一样，就不多赘述了。
 
@@ -5840,7 +5840,7 @@ AJAX 的应用场景有很多，比如实时更新地图、表单验证等等。
 4. 前端 JavaScript 代码通过 Ajax 调用后端 API 并获取 JSON 数据。
 5. 前端 JavaScript 代码使用获取到的 JSON 数据更新 HTML 页面。
 
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413131417150-471889699.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413131417150-471889699.png)
 
 **X-Requested-With 是一个 HTTP 请求头，用于标识请求是由 Ajax 发起的**。 XMLHttpRequest 对象是 Ajax 的核心，它可以在不重新加载整个页面的情况下更新部分网页。
 
@@ -6160,7 +6160,7 @@ Selenium底层是用Java语言实现的，支持多种编程语言的调用，�
 
 4. 运行
 
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413131521163-711255343.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413131521163-711255343.png)
 
 
 
@@ -6451,7 +6451,7 @@ Session是一种在服务器端存储数据的技术，服务器可以通过在H
 
 第一步：找到api
 
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413131556633-47091731.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413131556633-47091731.png)
 
 我们可以先故意输错密码，然后点击登录，这样就可以捕捉到登录的api了
 
@@ -6477,9 +6477,9 @@ denglu: 登录
 
 现在让我们打开网页控制台，查看登录界面的html源码：
 
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413131641534-1374592938.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413131641534-1374592938.png)
 
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413131655397-1854191217.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413131655397-1854191217.png)
 
 果然如此！所以，我们每次提交请求的时候，都需要在页面上捕获这两个字段的值
 
@@ -6552,11 +6552,11 @@ with open('gushiwen.html', 'w', encoding='utf-8') as fp:
 
 我们将gushiwen.html的源码用浏览器打开后，呈现的如下页面
 
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413131711429-1433372555.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413131711429-1433372555.png)
 
 难道是我们的验证码识别库出错了？
 
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/3167163-20230413131721110-1011549200.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/3167163-20230413131721110-1011549200.png)
 
 经过检查，验证码识别是正确的，那就是其它原因了。
 

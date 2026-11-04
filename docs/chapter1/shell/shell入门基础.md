@@ -2,7 +2,7 @@
 
 到今天，角色转变了，开始写代码了，什么服务也不用装，就是拿一个编辑器，刷刷写代码了。
 
-![image-20220621091711791](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621091711791.png)
+![image-20220621091711791](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621091711791.png)
 
 # 学习shell编程前言
 
@@ -36,7 +36,7 @@
 
 总之，想学好编程，更多的动手敲，比学来的更重要。
 
-![image-20220621092911881](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621092911881.png)
+![image-20220621092911881](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621092911881.png)
 
 
 
@@ -75,7 +75,7 @@ ping  172.16.1.xx
 
 ```
 
-![image-20220621095649877](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621095649877.png)
+![image-20220621095649877](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621095649877.png)
 
 编程语言(programming language)，是用来定义计算机程序的形式语言。
 
@@ -97,11 +97,11 @@ ping  172.16.1.xx
 
 
 
-![image-20220621100217364](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621100217364.png)
+![image-20220621100217364](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621100217364.png)
 
 ## 代码文件，只有在运行后才有实际意义
 
-![image-20220621100525028](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621100525028.png)
+![image-20220621100525028](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621100525028.png)
 
 
 
@@ -116,7 +116,7 @@ ping  172.16.1.xx
 
 ```
 
-![image-20220621101011860](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621101011860.png)
+![image-20220621101011860](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621101011860.png)
 
 ```
 当你看到这么一个脚本之后，你得
@@ -476,19 +476,19 @@ total 1728
 
 
 
-![image-20220621111537884](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621111537884.png)
+![image-20220621111537884](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621111537884.png)
 
 
 
 ---
 
-![image-20220621112014256](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621112014256.png)
+![image-20220621112014256](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621112014256.png)
 
 
 
 ---
 
-![image-20220621112119109](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621112119109.png)
+![image-20220621112119109](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621112119109.png)
 
 
 
@@ -514,7 +514,7 @@ total 1728
 
 
 
-![image-20220621113356173](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621113356173.png)
+![image-20220621113356173](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621113356173.png)
 
 
 
@@ -527,7 +527,7 @@ total 1728
 
 
 
-![image-20220621120208441](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621120208441.png)
+![image-20220621120208441](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621120208441.png)
 
 
 
@@ -537,11 +537,11 @@ total 1728
 
 ---
 
-![image-20220621120800154](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621120800154.png)
+![image-20220621120800154](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621120800154.png)
 
 ---
 
-![image-20220621121304048](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621121304048.png)
+![image-20220621121304048](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621121304048.png)
 
 ## 如何学好shell编程
 
@@ -558,7 +558,7 @@ total 1728
 
 ```
 
-![image-20220621121457257](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621121457257.png)
+![image-20220621121457257](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621121457257.png)
 
 
 
@@ -612,7 +612,7 @@ total 1728
 5. 创建统一管理脚本的目录，别乱放，回头找不到。
 ```
 
-![image-20220621124156334](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621124156334.png)
+![image-20220621124156334](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621124156334.png)
 
 一个规范的脚本示例
 
@@ -753,7 +753,7 @@ endfunction
 autocmd BufNewFile *.py call AddFileInformation_py()
 ```
 
-![image-20220621124945121](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621124945121.png)
+![image-20220621124945121](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621124945121.png)
 
 
 
@@ -762,7 +762,7 @@ autocmd BufNewFile *.py call AddFileInformation_py()
 
 
 
-![image-20220621125305423](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621125305423.png)
+![image-20220621125305423](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621125305423.png)
 
 
 
@@ -836,7 +836,7 @@ python除了可以开发网站的web服务，以及运维的开源工具，如an
 
 ```
 
-![image-20220621130014627](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621130014627.png)
+![image-20220621130014627](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621130014627.png)
 
 
 
@@ -855,7 +855,7 @@ python除了可以开发网站的web服务，以及运维的开源工具，如an
 
 
 
-![image-20220621130419989](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621130419989.png)
+![image-20220621130419989](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621130419989.png)
 
 ### 语法正确版本
 
@@ -882,7 +882,7 @@ fi
 
 
 
-![image-20220621130618900](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621130618900.png)
+![image-20220621130618900](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621130618900.png)
 
 
 
@@ -906,7 +906,7 @@ else
 
 #### 添加bash -x参数查看脚本执行细节过程
 
-![image-20220621131222677](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621131222677.png)
+![image-20220621131222677](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621131222677.png)
 
 
 
@@ -961,7 +961,7 @@ else
 
 
 
-![image-20220621131631845](https://raw.githubusercontent.com/sobermeng166/images/main/img/image-20220621131631845.png)
+![image-20220621131631845](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/image-20220621131631845.png)
 
 
 

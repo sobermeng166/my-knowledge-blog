@@ -69,7 +69,7 @@
 
 在写代码之前，请*千万不要*用“复制”-“粘贴”把代码从页面粘贴到你自己的电脑上。写程序也讲究一个感觉，你需要一个字母一个字母地把代码自己敲进去，在敲代码的过程中，初学者经常会敲错代码：拼写不对，大小写不对，混用中英文标点，混用空格和Tab键，所以，你需要仔细地检查、对照，才能以最快的速度掌握如何写程序。
 
-![simpson-learn-py3](https://raw.githubusercontent.com/sobermeng166/images/main/img/l.jpeg)
+![simpson-learn-py3](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/l.jpeg)
 
 在交互模式的提示符`>>>`下，直接输入代码，按回车，就可以立刻得到代码执行结果。现在，试试输入`100+200`，看看计算结果是不是300：
 
@@ -274,7 +274,7 @@ $ chmod a+x hello.py
 
 就可以直接运行`hello.py`了，比如在Mac下运行：
 
-![run-python-in-shell](https://raw.githubusercontent.com/sobermeng166/images/main/img/0.png)
+![run-python-in-shell](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/0.png)
 
 #### 小结
 
@@ -311,7 +311,7 @@ The quick brown fox jumps over the lazy dog
 
 `print()`会依次打印每个字符串，遇到逗号“,”会输出一个空格，因此，输出的字符串是这样拼起来的：
 
-![print-explain](https://raw.githubusercontent.com/sobermeng166/images/main/img/l-1714957975736-5.png)
+![print-explain](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/l-1714957975736-5.png)
 
 `print()`也可以打印整数，或者计算结果：
 

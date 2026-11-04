@@ -83,7 +83,7 @@
 
 - 报文分析
 
-![OSPF发现并建立邻居_报文分析1](D:\note\HCIP-R-S-master\OSPF.assets\OSPF发现并建立邻居_报文分析1.png)
+![OSPF发现并建立邻居_报文分析1](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/blog/1a561aab40/OSPF%E5%8F%91%E7%8E%B0%E5%B9%B6%E5%BB%BA%E7%AB%8B%E9%82%BB%E5%B1%85_%E6%8A%A5%E6%96%87%E5%88%86%E6%9E%901.png)
 
 ![OSPF发现并建立邻居_报文分析2](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/OSPF发现并建立邻居_报文分析2.png)
 

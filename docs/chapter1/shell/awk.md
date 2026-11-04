@@ -37,9 +37,9 @@ $		: 取值
 	print相当于打印 $ 内的内容
 ```
 
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/2608805-20211222234614799-614694014.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/2608805-20211222234614799-614694014.png)
 
-![image](https://raw.githubusercontent.com/sobermeng166/images/main/img/2608805-20211222232717833-628509553.png)
+![image](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/2608805-20211222232717833-628509553.png)
 
 ###### 5.参数
 

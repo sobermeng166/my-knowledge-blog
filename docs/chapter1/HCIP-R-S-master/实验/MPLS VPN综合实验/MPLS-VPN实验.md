@@ -255,7 +255,7 @@ ospf 1
 [PE2-GigabitEthernet0/0/2]ip ad 10.1.24.2 24
 ```
 
-![全局路由表、vpn路由表](D:\note\HCIP-R-S-master\实验\MPLS VPN综合实验\MPLS-VPN实验.assets\全局路由表、vpn路由表.png)
+![全局路由表、vpn路由表](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/blog/f0bd315032/%E5%85%A8%E5%B1%80%E8%B7%AF%E7%94%B1%E8%A1%A8%E3%80%81vpn%E8%B7%AF%E7%94%B1%E8%A1%A8.png)
 
 ## 配置MP-BGP
 
@@ -277,7 +277,7 @@ ospf 1
 [PE2-bgp-af-vpnv4]peer 11.11.11.11 enable 
 ```
 
-![VPNv4的邻居路由](D:\note\HCIP-R-S-master\实验\MPLS VPN综合实验\MPLS-VPN实验.assets\VPNv4的邻居路由.png)
+![VPNv4的邻居路由](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/blog/57ab8cb1aa/VPNv4%E7%9A%84%E9%82%BB%E5%B1%85%E8%B7%AF%E7%94%B1.png)
 
 ## 将CE与PE之间的IGP路由引入到MP-BGP路由表
 
@@ -292,7 +292,7 @@ ospf 1
 
 > MP-BGP的VPNv4路由表
 
-![VPNv4路由表](D:\note\HCIP-R-S-master\实验\MPLS VPN综合实验\MPLS-VPN实验.assets\VPNv4路由表.png)
+![VPNv4路由表](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/blog/2eef290cdc/VPNv4%E8%B7%AF%E7%94%B1%E8%A1%A8.png)
 
 ```bash
 # PE2将BGP路由引入OSPF
@@ -324,8 +324,8 @@ ospf 1
 
 ## 抓包查看标签
 
-![查看多层标签](D:\note\HCIP-R-S-master\实验\MPLS VPN综合实验\MPLS-VPN实验.assets\查看多层标签.png)
+![查看多层标签](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/blog/570d207591/%E6%9F%A5%E7%9C%8B%E5%A4%9A%E5%B1%82%E6%A0%87%E7%AD%BE.png)
 
 ## PE2的MP-BGP重新更新报文（`<PE2>refresh bgp all export`）
 
-![MP-BGP更新报文](D:\note\HCIP-R-S-master\实验\MPLS VPN综合实验\MPLS-VPN实验.assets\MP-BGP更新报文.png)
+![MP-BGP更新报文](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/blog/cd8de3906a/MP-BGP%E6%9B%B4%E6%96%B0%E6%8A%A5%E6%96%87.png)

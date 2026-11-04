@@ -168,7 +168,7 @@
 
 ![IS-IS报文分析](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/IS-IS报文分析.png)
 
-![IS-IS的LSP报文报文](D:\note\HCIP-R-S-master\ISIS.assets\IS-IS的LSP报文报文.png)
+![IS-IS的LSP报文报文](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/blog/adedc7fba1/IS-IS%E7%9A%84LSP%E6%8A%A5%E6%96%87%E6%8A%A5%E6%96%87.png)
 
 **拓展**
 

@@ -4,7 +4,7 @@
 
 ### OpenStack背景介绍
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220808111054337-270466774.svg)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220808111054337-270466774.svg)
 
 OpenStack是一个自由、开源的云计算平台。它主要作为基础设施即服务（IaaS）部署在公用云和私有云中，提供虚拟服务器和其他资源给用户使用。该软件平台由相互关联的组件组成，控制着整个数据中心内不同的厂商的计算、存储和网络资源的硬件池。用户可以通过基于网络的仪表盘、命令行工具或RESTful网络服务来管理。
 
@@ -12,7 +12,7 @@ OpenStack始于2010年，是Rackspace和美国国家航空航天局NASA的合作
 
 ### OpenStack应用场景
 
-![OpenStack Cloud Software](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220808111055129-404914853.svg)
+![OpenStack Cloud Software](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220808111055129-404914853.svg)
 
 
 
@@ -22,7 +22,7 @@ OpenStack是基础设施即服务（IaaS）软件，让任何人都可以自行�
 
 ### OpenStack发展历程
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220725153336438-2012679614.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220725153336438-2012679614.png)
 
 OpenStack每半年会发布一个版本，版本从字母A开始向后按顺序的命名；OpenStack社区为了方便描述，因此他们为每一个字母来进行投票，来选出一个单词。
 
@@ -77,11 +77,11 @@ OpenStack每半年会发布一个版本，版本从字母A开始向后按顺序�
 
 ### 架构全景图
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20210425192543008-1752884814.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20210425192543008-1752884814.png)
 
 ### 核心服务组件
 
-![image-20220725152414242](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220808111055219-1528350354.png)
+![image-20220725152414242](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220808111055219-1528350354.png)
 
 **全局组件：**
 
@@ -126,7 +126,7 @@ OpenStack每半年会发布一个版本，版本从字母A开始向后按顺序�
 
 > RESTful API是一套架构约束条件和原则，通过URL来定位资源，用HTTP动词（GET、POST、PUT、DELETE）描述操作。
 
-![image-20220725173022608](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220808111053795-482592692.png)
+![image-20220725173022608](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220808111053795-482592692.png)
 
 **REST定义的原则：**
 
@@ -164,7 +164,7 @@ AMQP协议：高级消息队列，基于消息的中间件提供的开放的应�
 >
 > 远程调用的随即均衡性，当客户端发起RPC调用时，可以随机选择一个服务器来处理消息
 
-![image-20220726104902727](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220808111055189-1414266892.png)
+![image-20220726104902727](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220808111055189-1414266892.png)
 
 两种交换方式：
 
@@ -216,7 +216,7 @@ AMQP协议：高级消息队列，基于消息的中间件提供的开放的应�
 
 ### 工作原理
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200513122428050-444923218.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200513122428050-444923218.png)
 
 1. 首先User向Keystone提供自己的Credentials（凭证：用于确认用户身份的数据，例如：username/password）；
 2. Keystone根据User提供的Credentials从SQL Database中进行身份和权限校验，验证通过返回User一个Token和Endpoint；
@@ -224,7 +224,7 @@ AMQP协议：高级消息队列，基于消息的中间件提供的开放的应�
 
 ### 在各个组件中的作用
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200513121327681-1611382494.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200513121327681-1611382494.png)
 
 1. User通过命令行或者API的方式登录后，提供自己的Credentials(凭证：用于确认用户身份的数据，例如：username/password)。
 2. Keystone根据User提供的Credentials从SQL Database中进行身份和权限校验，验证通过返回User一个Token和Endpoint。
@@ -235,7 +235,7 @@ AMQP协议：高级消息队列，基于消息的中间件提供的开放的应�
 
 ### 访问流程
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220808111054953-428588839.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220808111054953-428588839.png)
 
 1. User/API 想创建一个实例，首先会将自己的Credentials发给Keystone。认证成功后，keystone会颁给User/API一个临时的令牌(Token)和一个访问服务的Endpoint；
 2. User/API 把临时Token提交给Keystone，Keystone返回一个Tenant(Project)；
@@ -247,9 +247,9 @@ AMQP协议：高级消息队列，基于消息的中间件提供的开放的应�
 
 ### 常用操作
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523141045119-202503833.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523141045119-202503833.png)
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523141102150-168253434.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523141102150-168253434.png)
 
 ## 镜像服务 【Glance】
 
@@ -262,7 +262,7 @@ AMQP协议：高级消息队列，基于消息的中间件提供的开放的应�
 
 ### 镜像状态
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523145052836-69025679.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523145052836-69025679.png)
 
 Queued：初始化镜像状态，在镜像文件刚刚被创建，在glance数据库中已经保存了镜像标示符，但还没有上传至glance中，此时的glance对镜像数据没有任何描述，其存储空间为0；
 
@@ -302,11 +302,11 @@ OVA：开放虚拟化设备格式。
 
 AKI、ARI：Amazon公司的AWS所使用的镜像格式。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523150703475-1521705242.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523150703475-1521705242.png)
 
 ### 核心架构
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523150905292-596687303.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523150905292-596687303.png)
 
 **Glance-api：**接收REST API的请求，然后通过其他模块（glance-registry及image store）来完成诸如镜像的查找、获取、上传、删除等操作，默认监听端口9292。
 
@@ -330,11 +330,11 @@ AKI、ARI：Amazon公司的AWS所使用的镜像格式。
 
 ### 工作流程
 
-![image-20220727105308771](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220808111053870-127958818.png)
+![image-20220727105308771](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220808111053870-127958818.png)
 
 ### 常用操作
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523154443765-1655498412.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523154443765-1655498412.png)
 
 ## 计算服务【Nova】
 
@@ -351,7 +351,7 @@ AKI、ARI：Amazon公司的AWS所使用的镜像格式。
 
 ### 核心架构
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523163017957-1184132094.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523163017957-1184132094.png)
 
 ### 组件
 
@@ -361,13 +361,13 @@ AKI、ARI：Amazon公司的AWS所使用的镜像格式。
 
 1. 过滤（filter）：过滤出可以创建虚拟机的主机。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523163457553-667114280.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523163457553-667114280.png)
 
 1. 计算权值（weight）：根据权重大小进行分配，默认根据资源可用空间进行权重排序。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523163544656-759104690.png)**nova-compute：**负责虚拟机的生命周期管理，创建并终止虚拟机实例的工作后台程序Hypervisor api
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523163544656-759104690.png)**nova-compute：**负责虚拟机的生命周期管理，创建并终止虚拟机实例的工作后台程序Hypervisor api
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523163721463-1878179074.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523163721463-1878179074.png)
 
 **nova-conductor：**计算节点访问数据的中间件，nova-compute服务和数据库之间的中间件。它消除了对云数据库的直接访问。
 
@@ -379,13 +379,13 @@ AKI、ARI：Amazon公司的AWS所使用的镜像格式。
 
 **Queue：**在守护进程之间传递消息的中心。通常使用RabbitMQ也可以用另一个基于AMQP的消息队列，例如ZeroMQ。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523162111639-932281730.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523162111639-932281730.png)
 
 ### 工作流程
 
 Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等组件联动
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220727113444626-242225130.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220727113444626-242225130.png)
 
 **Nova创建虚拟机的过程：**
 
@@ -423,15 +423,15 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 **生命周期和虚拟机管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523194336180-1065575782.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523194336180-1065575782.png)
 
 **云主机规格和安全组管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523194404325-1737146179.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523194404325-1737146179.png)
 
 **网络、浮动IP密钥和配额管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200523194404325-1737146179.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200523194404325-1737146179.png)
 
 ## 网络服务【Neutron】
 
@@ -448,17 +448,17 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 - `Local `网络与其他网络和节点隔离。Local 网络中的 instance 只能与位于同一节点上同一网络的 Instance 通信，主要用于单机测试。
 
-    ![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220727173717900-1567064964.png)
+    ![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220727173717900-1567064964.png)
 
 - `Flat` 网络是无 VLAN Tag 的网络，它要求宿主机的物理网卡直接与Linux Bridge连接。Flat 网络中的 instance 能与位于同一网络的 instance 通信，并且可以跨多个节点。
 
-    ![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220727173918599-678571342.png)
+    ![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220727173918599-678571342.png)
 
     > 上面图中eth1桥接到brqXXX，为instance提供flat网络
 
     如果需要创建多个flat network，就得准备多个物理网卡，如下图所示：
 
-    ![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220727174716233-1799123422.png)
+    ![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220727174716233-1799123422.png)
 
     > 因为flat网络与物理网卡一一对应，一般情况下租户网络不会采用flat，接着需要指明flat网络与物理网卡的对应关系。
     >
@@ -467,7 +467,7 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 - `VLAN` 网络是具有 802.1q tag 的网络，是一个二层的广播域，同一 VLAN 中的 instance 可以通信，不同 VLAN 只能通过 Router 通信。VLAN 网络可跨节点，是应用最广泛的网络类型。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220727175002940-744335726.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220727175002940-744335726.png)
 
 > 1. 三个 Instance 通过 TAP 设备连接到名为 "brqXXXX" Linux Bridge。
 > 2. 在物理网卡 eth1 上创建了 eth1.100 的 VLAN Interface，eth1.100 连接到 brqXXXX。
@@ -475,16 +475,16 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 如果再创建一个 VLAN Network 101，eth1上会相应的创建 VLAN Interface eth1.101，并且连接到新的 Linux Bridge "brqYYYY"。每个 VLAN Network 有自己的 Bridge，从而也就实现了基于 VLAN 的隔离。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220727175609437-1430227901.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220727175609437-1430227901.png)
 
 因为物理网卡eth1上面可以走多个VLAN的数据，那么物理交换机上与eth1相连的Port要设置成trunk模式，而不是access模式。
 那么，不同的VLAN设备怎么样才可以通信呢？那就需要Router来提供数据转发服务，如下图。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220727175810686-2054484673.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220727175810686-2054484673.png)
 
 - `VxLAN` 是一种在现有物理网络设施中支持大规模多租户网络环境的解决方案，它的传输协议是IP + UDP。VXLAN 定义了一个MAC-in-UDP的封装格式，在原始的Layer 2网络包前加上VXLAN header，然后放到UDP和IP包中，通过MAC-in-UDP封装，VXLAN能够在Layer 3网络上建立起了一条Layer 2的隧道。因为二层的包通过封装在三层传输，能够克服 VLAN 和物理网络基础设施的限制。
 
-    ![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220808111055144-1827040898.jpg)
+    ![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220808111055144-1827040898.jpg)
 
     > 上图是VxLAN的数据包格式，从图中我们可以得知，VXLAN引入了8Bytes的VXLAN Header，其中VNI占24bit。
     >
@@ -545,7 +545,7 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
     - Neutron 路由器是一个三层的（L3）抽象，其模拟物理路由器，为用户提供路由、NAT等服务，在 OpenStack 网络中，不用子网之间的通信需要路由器，网络与外部网络之间的通信更需要路由器。
     - Neutron 提供虚拟路由器，也支持物理路由器。例如，两个隔离的VLAN网络之间需要实现通信，可以通过物理路由器实现，由物理路由器提供相应的 IP 路由表，确保两个IP子网之间的通信，将两个VLAN网络中的虚拟机默认网关分别设置为路由器的接口A和B的IP地址。VLAN A 中的虚拟机要与 VLAN B 中的虚拟机通信时，数据包将通过VLAN A中的物理网卡到达路由器，由物理路由器转发到 VLAN B中的物理网卡，再到达目的虚拟机。
 
-    ![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220727173053089-1963518138.png)
+    ![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220727173053089-1963518138.png)
 
 4. 负载均衡 Load Balance
 
@@ -560,7 +560,7 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 ### 核心架构
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525094259973-1005671677.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525094259973-1005671677.png)
 
 **Neutron Server：**对外提供 OpenStack 网络 API，接收请求，并调用 Plugin 处理请求。
 
@@ -578,7 +578,7 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 **Neutron Server 详解：**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220728110508388-513672500.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220728110508388-513672500.png)
 
 `Core API`：对外提供管理 Network，Subnet 和 Port 的 RESTful API。
 
@@ -598,7 +598,7 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 **ML2 Core Plugin 详解：**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220808111054958-2143548789.jpg)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220808111054958-2143548789.jpg)
 
 - Neutron 可以通过开发不同的 plugin 和 agent 支持不同的网络技术，但是随着支持的 network provider 数量的增加，开发人员发现两个突出的问题：
 
@@ -623,7 +623,7 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 **Service Plugin / Agent 详解：**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525111039385-1641360813.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525111039385-1641360813.png)
 
 `Core Plugin` 和`Agent` 负责管理核心实体：Net，Subnet 和 Port。而对于更高级的网络服务，则由 Service Plugin/Agent 管理。
 
@@ -644,13 +644,13 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 ① 计算节点 和 控制节点
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525093957562-1310557337.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525093957562-1310557337.png)
 
 这里使用的是物理交换机，实现的网络互通。
 
 ② 多个节点，适合大规模的 OpenStack 平台
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525093950627-1900725545.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525093950627-1900725545.png)
 
 这里使用的是虚拟交换机，通过网络节点实现的网络互通。
 
@@ -658,15 +658,15 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 **网络、子网、路由、端口管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525113712106-1528421796.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525113712106-1528421796.png)
 
 **防火墙管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525113722453-45392241.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525113722453-45392241.png)
 
 **负载均衡管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525113549109-238189231.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525113549109-238189231.png)
 
 ### 扩展：Open vSwitch
 
@@ -683,7 +683,7 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 #### 组成
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525141304100-1703728165.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525141304100-1703728165.png)
 
 `ovs-vswitchd`：守护程序，实现交换功能，和Linux内核兼容模块一起，实现基于流的交换flow-based switching。
 
@@ -703,9 +703,9 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 #### 工作流程
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525142502610-225384625.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525142502610-225384625.png)
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525094034213-1407022783.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525094034213-1407022783.png)
 
 1. VM实例 instance 产生一个数据包并发送至实例内的虚拟网络接口VNIC，图中就是instance中的eth0.
 2. 这个数据包会传送到物理节点上的VNIC接口，如图就是vnet接口vnet1。
@@ -715,7 +715,7 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 #### **Open vSwitch管理常用命令**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525151257686-2035246993.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525151257686-2035246993.png)
 
 ## 块存储服务【Cinder】
 
@@ -742,11 +742,11 @@ Nova创建虚拟机的过程中，会与Keystone、Glance、Cinder、Neutron等�
 
 Cinder采用的是松散的架构理念，由 `cinder-api` 统一管理外部对 cinder 的调用，`cinder-scheduler` 负责调度合适的节点去构建 volume 存储。`volume-provider` 通过对 driver 负责具体的存储空间，然后 cinder 内部依旧通过消息队列 queue 沟通，解耦各子服务支持异步调用。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220801151620447-1300540233.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220801151620447-1300540233.png)
 
 `cinder-scheduler`：通过 filter 进行筛选，允许使用第三方的 filter，自定义筛选内容。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220801151935721-1551998408.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220801151935721-1551998408.png)
 
 ### 核心组件
 
@@ -756,11 +756,11 @@ Cinder采用的是松散的架构理念，由 `cinder-api` 统一管理外部对
 2. 调用 cinder 其它子服务的处理客户端请求
 3. 将 cinder 其它子服务返回的结果序列号并返回给客户端
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220801152308503-1077809551.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220801152308503-1077809551.png)
 
 **cinder-scheduler：**Cinder 可以有多个存储节点，当需要创建 volume 时，cinder-scheduler 会根据存储节点的属性和资源使用情况选择一个最合适的节点来创建 volume。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220801152809289-329381579.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220801152809289-329381579.png)
 
 **cinder-volume：**cinder-volume 在存储节点上运行，OpenStack 对 Volume 的操作，最后都是交给 cinder-volume 来完成的。（cinder-volume 自身并不管理真正的存储设备 ，存储设备是由 volume provider 管理的。cinder-volume 与 volume provider 一起实现 volume 的生命周期管理）。
 
@@ -768,19 +768,19 @@ Cinder采用的是松散的架构理念，由 `cinder-api` 统一管理外部对
 2. 定期向 OpenStack 报告计算节点的状态。cinder-volume 会定期向 cinder 报告存储节点的空闲容量来做筛选启动 volume。
 3. 实现 volume 生命周期管理。cinder 对 volume 的生命周期的管理最终都是通过 cinder-volume 完成的，包括 volume 的 create、extend、attach、snapshot、delete 等。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1953408-20220801153955515-757656856.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1953408-20220801153955515-757656856.png)
 
 **volume provider：**数据的存储设备，为 volume 提供物理存储空间。cinder-volume 支持多种 volume provider，每种 volume provider 通过自己的 driver 与 cinder-volume 协调工作。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525080003408-1929330448.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525080003408-1929330448.png)
 
 **Message Queue：**cinder 各个子服务通过消息队列实现进程间通信和相互协作。因为有了消息队列，子服务之间实现了解耦，这种松散的结构也是分布式系统的重要特征。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525075455426-23947747.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525075455426-23947747.png)
 
 ### 工作流程
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525080154729-245357494.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525080154729-245357494.png)
 
 1. 用户向 cinder-api 发送创建 volume 的请求
 2. cinder-api 对请求做一些必要处理后，通过 Messaging 将创建消息发送给 cinder-scheduler
@@ -792,11 +792,11 @@ Cinder采用的是松散的架构理念，由 `cinder-api` 统一管理外部对
 
 **Volume、类型、快照、备份管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525080340135-1800830891.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525080340135-1800830891.png)
 
 **限速、转移、服务、一致性组、加密管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525080423824-872377907.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525080423824-872377907.png)
 
 ## 对象存储服务【Swift】
 
@@ -819,7 +819,7 @@ Cinder采用的是松散的架构理念，由 `cinder-api` 统一管理外部对
     - 负载均衡：负载时对分散性要求的另一个维度。既然相同的内容可能被映射到不同的缓冲区中，那么对于同一个缓冲而言，就有可能被不同的用户映射不同的内容。与分散性一样，这种情况应该被避免。
     - 如图所示，以逆时针方向递增的散列空间有 4个字节长共 32 位，整数范围是[0~2^32-1]；将散列结果右移 m 位，可产生 2^32-m 个虚拟节点，例如 m=29 时可产生 8个虚拟节点。在实际部署的时候需要经过仔细计算得到合适的虚拟节点数，以达到存储空间和工作负载之间的平衡。
 
-    ![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525160557078-1829761314.png)
+    ![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525160557078-1829761314.png)
 
 2. 数据一致性模型（Consistency Model）
 
@@ -829,7 +829,7 @@ Cinder采用的是松散的架构理念，由 `cinder-api` 统一管理外部对
         3. 弱一致性：R+W <= N，如果读写操作的副本集合不产生交集，就可能会读到脏数据；适合对一致性要求比较低的场景。
     - Swift 针对的是读写都比较频繁的场景，所以采用了比较折中的策略，即写操作需要满足至少一半以上成功 W>N/2，再保证读操作与写操作的副本集合至少产生一个交集，即 R+W>N。Swift默认配置是 N=3，W=2>N/2，R=1或2，即每个对象会存在 3 个副本，这些副本会尽量被存储在不同区域的节点上；W=2 表示至少需要更新 2 个副本才算写成功；当 R=1 时意味着某一个读操作成功便立刻返回，此种情况下可能会读取到旧版本（弱一致性模型）；当 R=2 时，需要通过在读操作请求头中增加 x-newest=true 参数来同时读取 2 个副本的元数据信息，然后比较时间戳来确定哪个是最新版本（强一致性模型）；如果数据出现了不一致，后台服务进程会在一定时间窗口内通过检测和复制协议来完成数据同步，从而保证达到最终一致性。如图 2 所示：
 
-    ![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525160924482-363290925.png)
+    ![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525160924482-363290925.png)
 
 3. 环的数据结构
 
@@ -845,7 +845,7 @@ Cinder采用的是松散的架构理念，由 `cinder-api` 统一管理外部对
     - 账户和个人账户不是一个概念，可以理解为租户，用来做顶层的隔离机制，可以被多个个人账户所共同使用。
     - 容器代表封装一组对象，类似文件夹或目录；叶子节点代表对象，由元数据和内容两部分组成，如图所示：
 
-    ![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525162922429-947133042.png)
+    ![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525162922429-947133042.png)
 
 ### 特性
 
@@ -861,7 +861,7 @@ Cinder采用的是松散的架构理念，由 `cinder-api` 统一管理外部对
 
 ### 架构
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525191901784-1958089689.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525191901784-1958089689.png)
 
 ### 核心组件
 
@@ -895,7 +895,7 @@ CAP概述：美国著名科学家，Berkerly大学Brewer教授提出的一个分
 
 Swift对CAP的支持：
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525194030602-793875761.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525194030602-793875761.png)
 
 Consistency：Swift的一致性归为弱一致性模型。Swift 由 updater 保证最终一致性，auditor 保证存储对象的完整性。Swift 只能保证数据的最终一致性，即，如果upload(update也是一种upload)一个object，从其他客户端GET这个object，不一定是最新的。
 
@@ -903,7 +903,7 @@ Availability：基于python对hash的 原生支持，swift中广泛使用了hash
 
 ### 常用操作
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200525194334089-1537114084.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200525194334089-1537114084.png)
 
 ## 编排服务【Heat】
 
@@ -930,7 +930,7 @@ Availability：基于python对hash的 原生支持，swift中广泛使用了hash
 
 ### 核心架构
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200526084332331-735209269.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200526084332331-735209269.png)
 
 **heat command-line client：**CLI通过与 heat-api 通信，来调用 API 实现相关功能。终端开发者可以直接使用编排 REST API。
 
@@ -950,17 +950,17 @@ Availability：基于python对hash的 原生支持，swift中广泛使用了hash
 4. Heat Engine 接收到请求后，会把请求解析为各种类型的资源，每种资源都对应 OpenStack 其它的服务客户端，然后通过发送 REST 的请求给其它服务。
 5. Heat Engine 在这里的作用分为三层： 第一层处理 Heat 层面的请求，就是根据模板和输入参数来创建 Stack，这里的 Stack 是由各种资源组合而成。 第二层解析 Stack 里各种资源的依赖关系，Stack 和嵌套 Stack 的关系。第三层就是根据解析出来的关系，依次调用各种服务客户段来创建各种资源。
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200526092744759-1412996137.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200526092744759-1412996137.png)
 
 ### 常用操作
 
 **栈、资源、模板管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200526143125727-1499471554.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200526143125727-1499471554.png)
 
 **软件、快照管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200526151003877-1586132609.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200526151003877-1586132609.png)
 
 ## 数据库服务【Trove】
 
@@ -985,11 +985,11 @@ Availability：基于python对hash的 原生支持，swift中广泛使用了hash
 
 ### 核心架构
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200527083342336-621136677.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200527083342336-621136677.png)
 
 ### 组件详解
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200527083538322-781511425.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200527083538322-781511425.png)
 
 **trove-api：**用于操作请求的接收和分发操作提供 REST 风格的 API，同时与 trove-conductor 和 trove-taskmanager 通信，一些轻量级的请求，比如获取实例状态，实例数量等操作都是自身直接处理或访问 trove。trove-conductor 和 trove-taskmanager处理比较重量级的操作。比如创建数据库，创建备份等操作都是通过rpc传递给 trove-taskmanager，然后通过调用 nova、swift、neutron、cinder等组件来完成操作。
 
@@ -1001,7 +1001,7 @@ Availability：基于python对hash的 原生支持，swift中广泛使用了hash
 
 ### 功能
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200527152325664-1105608237.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200527152325664-1105608237.png)
 
 ```css
   1. 动态resize能力：分为instance-resize和volume-resize，前者主要是实例运行的内存大小和cpu核数，后者主要是指数据库分区对应的硬盘卷的大小。由于实例是跑在vm上的，而vm的cpu和memory的规格可以通过Nova来进行动态调整，所以调整是非常方便快捷的。另外硬盘卷也是由Cinder提供的动态扩展功能来实现resize。resize过程中服务会有短暂的中断，是由于mysqld重启导致的。
@@ -1015,11 +1015,11 @@ Availability：基于python对hash的 原生支持，swift中广泛使用了hash
 
 **实例、数据库、数据库用户管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200528091935335-1689123699.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200528091935335-1689123699.png)
 
 **备份和集群管理**
 
-![img](https://raw.githubusercontent.com/sobermeng166/images/main/img/1610676-20200528095228856-1304654070.png)
+![img](https://cdn.jsdelivr.net/gh/sobermeng166/images@main/img/1610676-20200528095228856-1304654070.png)
 
 ## 参考链接
 
